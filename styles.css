@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+}
+
+#logo img{
+    width: 300px;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+header > div{
+    display: flex;
+    gap: 15px;
+}
+header > div img{
+    width: 20px;
+    height: 20px;
+}
+.importante{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#seccion-marcas{
+    height: 100vh;
+    background-image: url("https://gonzalo-bechara.notion.site/image/attachment%3A6354831d-ddf0-4b1c-bba9-e7e96475f716%3Aimage.png?table=block&id=3b2910d5-c035-80a5-a06b-cb24f2371999&spaceId=affc51a2-bad1-433b-813d-91f904746214&width=640&userId=&cache=v2&imgBuildSrc=requestProxiedImageUrl");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+h3{
+    font-size: 22px;
+    text-align: center;
+    color: #28373c;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#contenedor-marcas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    img{
+        max-width: 100%;
+        margin: 0px 20px;
+        box-shadow: 5px 5px 10px 5px #0000001d;
+        border-radius: 3px;
+        border: 1px solid #0000001d;
+
+    }
+}
+
+
+#seccion-nosotros{
+    background-image: url("https://gonzalo-bechara.notion.site/image/attachment%3A89736bde-84bc-4b14-8a5d-2ff83e49c749%3Aimage.png?table=block&id=3b2910d5-c035-8007-b579-cda0b8d2051a&spaceId=affc51a2-bad1-433b-813d-91f904746214&width=640&userId=&cache=v2&imgBuildSrc=requestProxiedImageUrl");
+    background-position: center;
+    background-size: cover;
+
+    >.contenedor-chico{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 0px;
+        >div{
+            flex: 1;
+            *{
+                margin: 10px 0px;
+            }
+        }
+        hr{
+            width: 20%;
+            margin: 20px 0;
+        }
+    }
+    img{
+        width: 100%;
+        box-shadow: 40px 40px #4e5c53;
+        border-radius: 3px;
+        /* margin left: 20px; */
+    }
+}
+
+#seccion-fundacion{
+    background-color: #91b7c2;
+    >img{
+        padding: 30px 40px;
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+    .contenedor-chico{
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        
+    }
+    .der{
+        backdrop-filter: blur(30%); 
+        background-image: url("https://gonzalo-bechara.notion.site/image/attachment%3A57127d14-eb0d-4e21-88df-3315cfbcf37a%3Aimage.png?table=block&id=3b2910d5-c035-80d1-9fce-e599551fef81&spaceId=affc51a2-bad1-433b-813d-91f904746214&width=640&userId=&cache=v2&imgBuildSrc=requestProxiedImageUrl");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 20px;
+        gap: 40px; 
+        align-items: center; 
+    }
+    article{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+    #otras-noticias-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        color: rgb(220,220, 220);
+        div{
+            margin-top: auto;
+            &.active{
+                color: white;
+            }
+        }
+    }
+}
+
+#seccion-contacto{
+    background-color: #28373c;
+    margin: 0px;
+    border: 3px solid #28373c;
+    padding: 20px; 
+    .contenedor-chico>div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        >*{
+            flex: 1;
+        }
+    }
+    #mapa{
+        width: 60%;
+        padding: 3%;
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #contacto-detalle:hover{
+        background-color: #304147;
+        transition: ease-in-out 100ms;
+    }
+}
+.contenedor-chico{
+    width: 800px;
+    margin: auto;
+    
+   .izq{
+    margin-right: 10px;
+    
+    
+  
+    
+    
+   }
+   .der{
+    text-align: right;
+    
+    
+
+   }
+}
+#seccion-fundacion .izq{
+    flex: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 220px;
+        height: 150px;
+    }
+}
+#seccion-fundacion .der{
+    flex: 2;
+    width: 60%;
+    text-align: center;
+
+}
+footer{
+    background-color: #2d373d;
+}
+
+.card{
+    width: 150px;
+    box-sizing: border-box;
+   
+    margin: 20px;
+    padding: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.texto-invertido{
+    color: white;
+}
+
+.pie{
+    color: #202c30;
+    p{
+        color: rgb(178, 251, 251);
+        display: block;
+        text-align: center;
+    }
+    a img{
+        text-align: center;
+        
+    }
+
+}
+.boton{
+    background-color: #91b7c2;
+    border-radius: 3px;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.bot{
+    background-color: #91b7c2;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+
+}
+.boton1{
+    background-color: #91b7c2;
+    border-radius: 3px;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: left;
+}
+    
+#red{
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
